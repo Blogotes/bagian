@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+#MediaPlayer1
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_MediaPlayer1
+{
+   display: block;
+   position: relative;
+   margin: 0;
+   height: 24px;
+   vertical-align: top;
+}
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+</style>
+<script src="jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="plyr/plyr.css">
+<script src="plyr/plyr.js"></script>
+<script>
+$(document).ready(function()
+{
+var bPlayLarge = true;
+var bPlay = true;
+var bProgress = true;
+var bCurrentTime = true;
+var bMute = true;
+var bVolume = true;
+var bFullScreen = true;
+var controls = [];
+if (bPlayLarge) controls.push('play-large');
+if (bPlay) controls.push('play');
+if (bProgress) controls.push('progress');
+if (bCurrentTime) controls.push('current-time');
+if (bMute) controls.push('mute');
+if (bVolume) controls.push('volume');
+if (bFullScreen) controls.push('fullscreen');
+plyr.setup('.Extension1', { autoplay: true,  controls: controls, volume: 7 });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_MediaPlayer1" style="display:none;width:100%;z-index:0;">
+<audio src="32Stitches & CHENDA, Harley Bird - Freedom [NCS Release].mp3" id="MediaPlayer1" autoplay controls>
+</audio>
+
+</div>
+<div id="wb_Extension1" style="display:inline-block;width:100%;z-index:1;">
+<div class="Extension1">
+<audio poster="images/AccordionMenu.jpg" controls>
+<source src="32Stitches &amp; CHENDA, Harley Bird - Freedom [NCS Release].mp3" type="audio/mp3" />
+</audio>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
